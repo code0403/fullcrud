@@ -25,7 +25,7 @@ app.listen(process.env.PORT, async () => {
         await connection
         console.log("Server is running!")
     } catch (error) {
-        console.log(err)
+        console.log(error)
         console.log("Connect to MongoDb")
     }
     console.log(`server started on port ${process.env.PORT}`)
